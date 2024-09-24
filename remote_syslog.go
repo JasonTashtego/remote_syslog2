@@ -15,6 +15,8 @@ import (
 	"github.com/papertrail/go-tail/follower"
 	"github.com/papertrail/remote_syslog2/syslog"
 	"github.com/papertrail/remote_syslog2/utils"
+
+	_ "github.com/breml/rootcerts"
 )
 
 var log = loggo.GetLogger("")
@@ -175,7 +177,6 @@ func (s *Server) tailFiles() {
 	}
 }
 
-//
 func (s *Server) globFiles(firstPass bool) {
 	log.Debugf("Evaluating file globs")
 	for _, glob := range s.config.Files {
@@ -224,6 +225,7 @@ func matchExps(value string, expressions []*regexp.Regexp) bool {
 }
 
 func main() {
+
 	c, err := NewConfigFromEnv()
 	if err != nil {
 		if err == ErrUsage {

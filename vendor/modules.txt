@@ -4,9 +4,6 @@ github.com/VividCortex/godaemon
 # github.com/davecgh/go-spew v0.0.0-20151105211317-5215b55f46b2
 ## explicit
 github.com/davecgh/go-spew/spew
-# github.com/fsnotify/fsnotify v1.3.2-0.20160816051541-f12c6236fe7b
-## explicit
-github.com/fsnotify/fsnotify
 # github.com/hashicorp/go-version v1.0.0
 ## explicit
 github.com/hashicorp/go-version
@@ -42,9 +39,6 @@ github.com/mitchellh/mapstructure
 # github.com/nightlyone/lockfile v0.0.0-20160306143149-b30dcbfa86e3
 ## explicit
 github.com/nightlyone/lockfile
-# github.com/papertrail/go-tail v0.0.0-20170801201234-1b77c8dfcc6b
-## explicit
-github.com/papertrail/go-tail/follower
 # github.com/pelletier/go-buffruneio v0.1.0
 ## explicit
 github.com/pelletier/go-buffruneio
