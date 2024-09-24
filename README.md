@@ -1,3 +1,12 @@
+# Note: Modifications to this repo from standard remote_syslog2.
+
+1. Uses fsnotify from our forked version (supports polling watcher for non-standard file systems)
+2. Uses go-tail from our forked version (uses polling watcher from fsnotify)
+3. Uses embedded cacerts for platforms that don't have cacerts or are old.
+
+The result of all this is that this version supports almost any os/device Go can target.
+
+
 # remote_syslog2
 
 [![Download remote_syslog2](https://papertrail.github.io/remote_syslog2/images/download.png)][releases]
